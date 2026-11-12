@@ -34,34 +34,29 @@ payguard/
 ├── index.html       # Modern fintech checkout frontend UI with retry simulation
 └── ledger.db        # Embedded SQLite transaction database (auto-generated)
 
-```
-How to Run Locally
+```🚀 How to Run Locally
 
 Follow these exact steps to run the complete PayGuard full-stack application on your machine:
 
-    Clone the repository:
-    Bash
-
-    git clone [https://github.com/yourusername/payguard.git](https://github.com/yourusername/payguard.git)
-    cd payguard
-
-Install required Python dependencies:
+💻 Clone the repository:
 Bash
+git clone https://github.com/yourusername/payguard.git
+cd payguard
 
+📦 Install required Python dependencies:
+Bash
 pip install fastapi uvicorn pydantic
 
-Start the FastAPI backend server:
+⚡ Start the FastAPI backend server:
 In your terminal, start the server using Uvicorn:
 Bash
-
 python -m uvicorn paymain:app --reload
-
 (Keep this terminal open and running in the background).
 
-Launch the frontend UI:
+🌐 Launch the frontend UI:
 
-    Open your File Explorer and navigate to your project folder.
+    Open your File Explorer and navigate to your project folder.
 
-    Double-click index.html to open it directly in your web browser.
+    Double-click index.html to open it directly in your web browser.
 
-    Click Pay Now to process a transaction, and use Simulate Double-Click to watch the server instantly catch and block duplicate requests live
+    Click Pay Now to process a transaction, and use Simulate Double-Click to watch the server instantly catch and block duplicate requests live 🛡️
