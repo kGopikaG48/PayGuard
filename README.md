@@ -1,12 +1,12 @@
-🛡️ PayGuard API
+##🛡️ PayGuard API
 > A fault-tolerant, retry-safe payment gateway built with FastAPI, SQLite, and JavaScript to guarantee exact-once transaction processing and eliminate duplicate customer charges.
 
 ---
 
-🚀 The Problem
+##🚀 The Problem
 In distributed payment systems, network timeouts and client-side retries are inevitable. If a user clicks "Pay" and experiences lag, they often click it again. Without idempotency, naive servers process both clicks, leading to accidental **double-charging**.
 
-💡 The Solution (Idempotency & Concurrency Control)
+##💡 The Solution (Idempotency & Concurrency Control)
 PayGuard solves this by implementing an enterprise-grade payment architecture:
 1. **Idempotency-Key Headers:** Every checkout session passes a unique transaction fingerprint.
 
@@ -16,7 +16,7 @@ PayGuard solves this by implementing an enterprise-grade payment architecture:
 
 ---
 
-🛠️ Tech Stack
+##🛠️ Tech Stack
 - **Backend:** Python, FastAPI, Pydantic, SQLite, Threading (Concurrency)
 
 - **Frontend:** HTML5, CSS3, JavaScript (Fetch API / AJAX)
@@ -26,7 +26,7 @@ PayGuard solves this by implementing an enterprise-grade payment architecture:
 
 ---
 
-📁 Project Structure
+##📁 Project Structure
 ```text
 payguard/
 │
@@ -35,29 +35,26 @@ payguard/
 └── ledger.db        # Embedded SQLite transaction database (auto-generated)
 
 ```
-🚀 How to Run Locally
+##🚀 How to Run Locally
 
 Follow these exact steps to run the complete PayGuard full-stack application on your machine:
 
-💻 Clone the repository:
+1.💻 Clone the repository:
 Bash
 git clone https://github.com/yourusername/payguard.git
 cd payguard
 
-📦 Install required Python dependencies:
+2.📦 Install required Python dependencies:
 Bash
 pip install fastapi uvicorn pydantic
 
-⚡ Start the FastAPI backend server:
+3.⚡ Start the FastAPI backend server:
 In your terminal, start the server using Uvicorn:
 Bash
 python -m uvicorn paymain:app --reload
 (Keep this terminal open and running in the background).
 
-🌐 Launch the frontend UI:
-
+4.🌐 Launch the frontend UI:
     Open your File Explorer and navigate to your project folder.
-
     Double-click index.html to open it directly in your web browser.
-
     Click Pay Now to process a transaction, and use Simulate Double-Click to watch the server instantly catch and block duplicate requests live 🛡️
