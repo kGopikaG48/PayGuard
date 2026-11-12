@@ -1,6 +1,6 @@
 
 # 🛡️ PayGuard
-> A fault-tolerant, retry-safe payment gateway built with FastAPI, SQLite, and JavaScript to guarantee exact-once transaction processing and eliminate duplicate customer charges.
+> A fault-tolerant, retry-safe payment gateway built with FastAPI, SQLite, and JavaScript to ensure strict idempotency and prevent duplicate customer charges.
 
 ---
 
