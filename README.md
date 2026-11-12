@@ -34,7 +34,7 @@ payguard/
 ├── index.html       # Modern fintech checkout frontend UI with retry simulation
 └── ledger.db        # Embedded SQLite transaction database (auto-generated)
 
-
+```
 How to Run Locally
 
 Follow these exact steps to run the complete PayGuard full-stack application on your machine:
